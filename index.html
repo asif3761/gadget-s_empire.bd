@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sundown &amp; Sage — Handmade Goods</title>
+<meta name="description" content="Handmade goods, sold direct. Order through our Facebook Shop.">
+
+<!-- Fonts: Alfa Slab One (display), Josefin Sans (body), Space Mono (labels/prices) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Josefin+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__mark" aria-label="Sundown & Sage, home">
+    <svg class="nav__sunburst" viewBox="0 0 100 100" aria-hidden="true">
+      <g class="sunburst-rays">
+        <!-- 12 rays drawn by JS-free CSS, base circle + rects rotated -->
+      </g>
+      <circle cx="50" cy="50" r="16" class="sunburst-core"></circle>
+    </svg>
+    <span class="nav__wordmark">SUNDOWN <em>&amp;</em> SAGE</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#gallery">Goods</a>
+    <a href="#story">Story</a>
+    <a href="#follow">Follow</a>
+    <a href="#contact" class="nav__cta">Order</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__sunburst-wrap" aria-hidden="true">
+    <svg class="hero__sunburst" viewBox="0 0 600 600">
+      <circle cx="300" cy="300" r="280" class="ray-ring ray-ring--1"/>
+      <circle cx="300" cy="300" r="220" class="ray-ring ray-ring--2"/>
+      <circle cx="300" cy="300" r="150" class="ray-ring ray-ring--3"/>
+      <circle cx="300" cy="300" r="70" class="ray-core"/>
+    </svg>
+  </div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow">EST. ON THE OPEN ROAD</p>
+    <h1 class="hero__title">Goods worth<br>the <span class="hero__title-accent">detour</span></h1>
+    <p class="hero__sub">Handmade, small-batch, sold straight from our porch to your door — every order placed through our Facebook Shop.</p>
+    <div class="hero__actions">
+      <a href="#gallery" class="btn btn--solid">Browse the Goods</a>
+      <a href="#contact" class="btn btn--outline">Say Howdy</a>
+    </div>
+  </div>
+
+  <!-- layered mesa silhouette, parallax on scroll -->
+  <div class="hero__mesas" aria-hidden="true">
+    <svg class="mesa mesa--back" viewBox="0 0 1440 220" preserveAspectRatio="none"><path d="M0,220 L0,140 L180,90 L340,150 L520,60 L700,130 L900,40 L1100,120 L1260,70 L1440,140 L1440,220 Z"/></svg>
+    <svg class="mesa mesa--mid" viewBox="0 0 1440 180" preserveAspectRatio="none"><path d="M0,180 L0,110 L220,150 L420,80 L640,140 L860,70 L1080,130 L1280,90 L1440,150 L1440,180 Z"/></svg>
+    <svg class="mesa mesa--front" viewBox="0 0 1440 140" preserveAspectRatio="none"><path d="M0,140 L0,90 L260,120 L500,60 L760,110 L1020,50 L1280,100 L1440,80 L1440,140 Z"/></svg>
+  </div>
+</section>
+
+<!-- ============ TICKER STRIP ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>HANDMADE &nbsp;✦&nbsp; SMALL BATCH &nbsp;✦&nbsp; SHIPPED WITH CARE &nbsp;✦&nbsp; ORDER VIA FACEBOOK &nbsp;✦&nbsp; </span>
+    <span>HANDMADE &nbsp;✦&nbsp; SMALL BATCH &nbsp;✦&nbsp; SHIPPED WITH CARE &nbsp;✦&nbsp; ORDER VIA FACEBOOK &nbsp;✦&nbsp; </span>
+  </div>
+</div>
+
+<!-- ============ GALLERY / PRODUCTS ============ -->
+<section class="gallery" id="gallery">
+  <div class="section-head reveal">
+    <span class="section-head__badge">01 — The Goods</span>
+    <h2>Fresh off the workbench</h2>
+    <p>Every piece links straight to its listing in our Facebook Shop — tap "Order This" to buy.</p>
+  </div>
+
+  <!--
+    ══════════════════════════════════════════════════════════════
+    PRODUCT CARDS — replace the placeholder content below with your
+    real items. Each .product-card needs:
+      1. data pattern class (product-card__art--01 through --08, or
+         reuse) for the CSS-drawn placeholder art
+      2. Product name, price, one-line description
+      3. href on "Order This" -> your Facebook Shop listing link
+    Duplicate the <article class="product-card"> block for each of
+    your 6–20 products.
+    ══════════════════════════════════════════════════════════════
+  -->
+  <div class="product-grid">
+
+    <article class="product-card reveal">
+      <div class="product-card__art product-card__art--01" aria-hidden="true"></div>
+      <div class="product-card__body">
+        <h3>Woven Saddle Bag</h3>
+        <p class="product-card__desc">Hand-loomed wool, leather straps, one of a kind.</p>
+        <div class="product-card__foot">
+          <span class="price">$68</span>
+          <!-- PLACEHOLDER: replace # with real Facebook Shop product link -->
+          <a href="#" class="btn btn--small" target="_blank" rel="noopener">Order This</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card reveal">
+      <div class="product-card__art product-card__art--02" aria-hidden="true"></div>
+      <div class="product-card__body">
+        <h3>Desert Clay Mug</h3>
+        <p class="product-card__desc">Wheel-thrown stoneware, rust glaze, holds 12oz.</p>
+        <div class="product-card__foot">
+          <span class="price">$24</span>
+          <a href="#" class="btn btn--small" target="_blank" rel="noopener">Order This</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card reveal">
+      <div class="product-card__art product-card__art--03" aria-hidden="true"></div>
+      <div class="product-card__body">
+        <h3>Sunburst Wall Hanging</h3>
+        <p class="product-card__desc">Carved oak, brass pins, 18in diameter.</p>
+        <div class="product-card__foot">
+          <span class="price">$95</span>
+          <a href="#" class="btn btn--small" target="_blank" rel="noopener">Order This</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card reveal">
+      <div class="product-card__art product-card__art--04" aria-hidden="true"></div>
+      <div class="product-card__body">
+        <h3>Turquoise Cuff</h3>
+        <p class="product-card__desc">Sterling silver, raw stone, adjustable band.</p>
+        <div class="product-card__foot">
+          <span class="price">$52</span>
+          <a href="#" class="btn btn--small" target="_blank" rel="noopener">Order This</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card reveal">
+      <div class="product-card__art product-card__art--05" aria-hidden="true"></div>
+      <div class="product-card__body">
+        <h3>Adobe Candle Set</h3>
+        <p class="product-card__desc">Soy wax, cedar &amp; sage scent, set of three.</p>
+        <div class="product-card__foot">
+          <span class="price">$34</span>
+          <a href="#" class="btn btn--small" target="_blank" rel="noopener">Order This</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card reveal">
+      <div class="product-card__art product-card__art--06" aria-hidden="true"></div>
+      <div class="product-card__body">
+        <h3>Mesa Print, No.3</h3>
+        <p class="product-card__desc">Screen-printed, archival paper, signed &amp; numbered.</p>
+        <div class="product-card__foot">
+          <span class="price">$40</span>
+          <a href="#" class="btn btn--small" target="_blank" rel="noopener">Order This</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="gallery__cta reveal">
+    <a href="#" class="btn btn--outline" target="_blank" rel="noopener">
+      <!-- PLACEHOLDER: link to your full Facebook Shop -->
+      See the Full Shop on Facebook →
+    </a>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="story" id="story">
+  <div class="story__art" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" class="story-ring"/></svg>
+  </div>
+  <div class="story__content reveal">
+    <span class="section-head__badge">02 — The Story</span>
+    <h2>Made slow, on purpose</h2>
+    <p>We're a two-person shop working out of a converted garage, building things the way they used to be built — one at a time, by hand, meant to last. No factories, no mass runs. Just tools, materials, and time.</p>
+    <p>Everything you see here started as a sketch on a porch somewhere between Marfa and Taos.</p>
+  </div>
+</section>
+
+<!-- ============ FACEBOOK FOLLOW ============ -->
+<section class="follow" id="follow">
+  <div class="section-head reveal">
+    <span class="section-head__badge">03 — Follow Along</span>
+    <h2>We're most alive on Facebook</h2>
+    <p>New drops, behind-the-scenes, and first-look listings post there before anywhere else.</p>
+  </div>
+  <div class="follow__panel reveal">
+    <!--
+      ══════════════════════════════════════════════════════════════
+      FACEBOOK PAGE PLUGIN — to make this live:
+      1. Replace data-href below with your real Facebook Page URL
+      2. Uncomment the Facebook SDK script at the bottom of the body
+      ══════════════════════════════════════════════════════════════
+    -->
+    <div id="fb-root"></div>
+    <div class="fb-page"
+         data-href="https://www.facebook.com/YOUR-PAGE-NAME"
+         data-tabs="timeline"
+         data-width="500"
+         data-height="400"
+         data-small-header="true"
+         data-adapt-container-width="true">
+    </div>
+    <p class="follow__fallback">
+      <!-- PLACEHOLDER: shows until you connect a real page -->
+      Facebook feed will appear here once connected — replace the placeholder URL in index.html.
+    </p>
+    <a href="#" class="btn btn--solid" target="_blank" rel="noopener">Follow on Facebook</a>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact__card reveal">
+    <span class="section-head__badge">04 — Say Howdy</span>
+    <h2>Questions before you order?</h2>
+    <p>Message us direct — we usually reply the same day.</p>
+    <div class="contact__links">
+      <!-- PLACEHOLDER: swap in your real number/email -->
+      <a href="https://wa.me/8801XXXXXXXXX?text=Hi%2C%20I%27m%20interested%20in%20your%20goods" class="contact__link" target="_blank" rel="noopener">
+        <span>WhatsApp</span>
+      </a>
+      <a href="mailto:hello@sundownandsage.com" class="contact__link">
+        <span>Email</span>
+      </a>
+      <a href="https://m.me/YOUR-PAGE-NAME" class="contact__link" target="_blank" rel="noopener">
+        <span>Messenger</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <svg class="footer__sunburst" viewBox="0 0 100 100" aria-hidden="true">
+    <circle cx="50" cy="50" r="14" class="sunburst-core"/>
+  </svg>
+  <p>Sundown &amp; Sage — handmade goods, sold direct.</p>
+  <p class="footer__fine">© <span id="year"></span> Sundown &amp; Sage. All orders placed via Facebook Shop.</p>
+</footer>
+
+<!--
+  FACEBOOK SDK — uncomment once you've set data-href above to your
+  real Page URL. Required for the Page Plugin to render.
+
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0">
+</script>
+-->
+
+<script src="script.js"></script>
+</body>
+</html>
